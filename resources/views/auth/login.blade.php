@@ -28,8 +28,9 @@
                 </div>
 
                 <a href="" class="btn btn-outline-primary mt-2 text-uppercase">Entrar</a>
+                <a href="{{route('register')}}" class="btn btn-outline-success mt-2 text-uppercase">Registrar</a>
 
-                <a href="" class="text-center mt-2 link-danger text-decoration-none">Esqueceu a senha?</a>
+                <a href="{{route('recovery')}}" class="text-center mt-2 link-danger text-decoration-none">Esqueceu a senha?</a>
 
             </form>
         </div>

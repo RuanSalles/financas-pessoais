@@ -19,5 +19,7 @@ Route::get('/', function () {
 });
 
 Route::controller(AuthController::class)->group(function () {
-    Route::get('/login', [AuthController::class, 'login']);
+    Route::get('/login', [AuthController::class, 'login'])->name('login');
+    Route::get('/register', [AuthController::class, 'register'])->name('register');
+    Route::get('/recovery', [AuthController::class, 'recovery'])->name('recovery');
 });
